@@ -3,15 +3,17 @@ let child1 = document.createElement("div");
 let child2 = document.createElement("div");
 let message = document.createElement("h1");
 
-main.classList.add("container-fluid", "mt-6", "text-center", "bg-dark");
+main.classList.add("container", "mt-5", "text-center", "bg-primary");
 
-child1.classList.add("row");
+child1.classList.add("row", "mt-5");
 
 child2.classList.add(
+  "card",
+  "shadow",
   "col-md-4",
   "text-center",
-  "border",
-  "offset-md-4",
+  "col-md-12",
+  "p-3",
   "text-white",
   "bg-primary"
 );
@@ -39,7 +41,7 @@ setTimeout(() => {
                   setTimeout(() => {
                     message.innerText = "1";
                     setTimeout(() => {
-                      message.innerText = "Happy New Year";
+                      message.innerText = "Happy New Year ";
                     }, 1000);
                   }, 1000);
                 }, 1000);
@@ -59,4 +61,4 @@ main.appendChild(child1);
 document.body.append(main);
 
 let body = document.body;
-body.classList.add("bg-dark");
+body.classList.add("bg-primary");
