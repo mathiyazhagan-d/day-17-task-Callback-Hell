@@ -41,7 +41,8 @@ setTimeout(() => {
                   setTimeout(() => {
                     message.innerText = "1";
                     setTimeout(() => {
-                      message.innerText = "Happy New Year ";
+                      message.innerHTML =
+                        "Happy New Year.<br> let start the new chapter.";
                     }, 1000);
                   }, 1000);
                 }, 1000);
